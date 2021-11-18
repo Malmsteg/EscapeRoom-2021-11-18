@@ -5,13 +5,12 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ dev ]
+    branches: [dev]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,23 +19,22 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm install 
-    - run: npm run build --if-present
-  
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm install /escaperoom
+      - run: npm run build --if-present /escaperoom
+
   deploy:
-      needs: build
-      if: github.event_name == 'pull_request'
-      runs-on: ubuntu-latest
-      environment: 
-        name: production
-        url: https://blissful-noether-973973.netlify.app
-      steps:
-       - name: deploy
-         run: echo "deploying"
-    
+    needs: build
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://blissful-noether-973973.netlify.app
+    steps:
+      - name: deploy
+        run: echo "deploying"
