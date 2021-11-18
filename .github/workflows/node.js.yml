@@ -33,7 +33,7 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     environment:
-      name: production
+      name: test
       url: https://blissful-noether-973973.netlify.app
     steps:
       - name: deploy
