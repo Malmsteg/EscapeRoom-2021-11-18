@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { HomeView } from '../views/HomeView';
+import { HomeView } from '../views/homeview/HomeView';
 import { RoomOneView } from '../views/roomOne/RoomOneView';
 export const Routes = () => {
   return (

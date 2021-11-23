@@ -12,7 +12,10 @@ export const RoomOneView = () => {
         <h2>- Vem tar alla i handen?</h2>
         <p>Hitta svaret för att ta dig till nästa klurighet.</p>
       </div>
-      <button id='room_one_hidden_link' onClick={() => history.push('/')} />
+      <button
+        id='room_one_hidden_link'
+        onClick={() => history.push('/roomtwo')}
+      />
       <img id='room_one_img' src={roomOne} alt='The first escape room'></img>
     </div>
   );
