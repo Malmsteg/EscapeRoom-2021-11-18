@@ -1,0 +1,28 @@
+body{
+    background-color:black;
+}
+.bg-img{
+    background-image: url(https://images.unsplash.com/photo-1520033906782-1684d0e7498e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-repeat: no-repeat;
+    height:50em;
+    width:80em;
+    margin:auto;
+    margin-top:7em;
+}
+
+.hiddenButton{
+    width:10em;
+    height:5em;
+    background-color:black;
+    position: fixed;
+    bottom:0em;
+    right:0em;
+    border-style: none;
+}
+
+.message{
+    position:fixed;
+    right:5em;
+    top:0em;
+    color:white;
+}
