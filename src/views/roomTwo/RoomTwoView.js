@@ -7,11 +7,11 @@ export const RoomTwoView = () => {
     return (
         <div>
             <div class="message">
-            <h1>Welcome to RoomTwo</h1>
-            <h4>Go ahead and look for the path to room three...</h4>
+            <h1>Välkommen till rum tre</h1>
+            <h4>Ta en tur och kika efter rum tre...</h4>
             </div>
             <div class="bg-img">
-                <button class="hiddenButton" onClick={() => history.push('/RoomThreeView')}>Take me to room three</button>
+                <button class="hiddenButton" onClick={() => history.push('/RoomThreeView')}>Ta mig till rum tre</button>
             </div>
         </div>
     )
