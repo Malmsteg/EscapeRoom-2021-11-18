@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import './RoomThree.css';
-
+import roomThree from '../../img/roomThree.jpg'
 export const RoomThreeView = () => {
   const history = useHistory();
   return (
@@ -9,11 +9,11 @@ export const RoomThreeView = () => {
       <div class='clue'>
         <h1>Det Tredje Rummet</h1>
         <hr />
-        <h2></h2>
-        <p>Kan du hitta svaret?.</p>
+        <h2>Kan du inte se mig, så kanske du behöver mig</h2>
+        <p>Sista rummet, kom igen nu!</p>
       </div>
-      <button id='room_one_hidden_link' onClick={() => history.push('/')} />
-      <img id='room_one_img' src={roomOne} alt='The first escape room'></img>
+        <button id='room_three_hidden_link' onClick={() => history.push('/')} />
+        <img id='room_three_img' src={roomThree} alt='The third escape room'></img> 
     </div>
   );
 };
