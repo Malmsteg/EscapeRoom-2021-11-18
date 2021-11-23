@@ -1,0 +1,32 @@
+.room_container {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #212121;
+}
+#room_one_img {
+  width: 1350px;
+  height: 100%;
+}
+.clue {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 15%;
+  background-color: #212121bb;
+  color: rgb(206, 206, 206);
+  padding: 0.5em;
+  border-radius: 10px;
+  border: 2px solid rgb(206, 206, 206);
+}
+
+#room_one_hidden_link {
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  position: absolute;
+  margin-top: 32.1rem;
+  margin-left: 41.6rem;
+  width: 3px;
+  height: 5px;
+}
