@@ -9,7 +9,7 @@ export const HomeView = () => {
         <h1>Escape Room</h1>
         <h2>Grupp 3</h2>
         <button onClick={() => history.push('/roomone')}>
-          Börja äventyret
+          Starta äventyret
         </button>
       </div>
     </div>
