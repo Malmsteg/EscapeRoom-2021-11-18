@@ -12,7 +12,7 @@ export const Routes = () => {
         <Route exact path='/' component={HomeView} />
         <Route exact path='/roomone' component={RoomOneView} />
         <Route exact path='/roomtwo' component={RoomTwoView} />
-           <Route exact path='/roomthree' component={RoomThreeView} />
+        <Route exact path='/roomthree' component={RoomThreeView} />
       </Switch>
     </BrowserRouter>
   );

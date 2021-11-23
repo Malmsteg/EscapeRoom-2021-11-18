@@ -11,7 +11,7 @@ export const RoomTwoView = () => {
             <h4>Ta en tur och kika efter rum tre...</h4>
             </div>
             <div class="bg-img">
-                <button class="hiddenButton" onClick={() => history.push('/RoomThreeView')}>Ta mig till rum tre</button>
+                <button class="hiddenButton" onClick={() => history.push('/RoomThree')}>Ta mig till rum tre</button>
             </div>
         </div>
     )
